@@ -1,5 +1,3 @@
-
-
 public class Vehiculos {
     private String marca;
     private String modelo;
