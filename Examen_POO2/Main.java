@@ -6,11 +6,11 @@ public class Main {
             
     GestorReservas gestor = new GestorReservas(4);
 
-    salaTradicional r1 = new salaTradicional("COD120", "La noche del demonio", 10.0, 120);
-    salaTradicional r2 = new salaTradicional("COD402", "El conjuro", 15.0, 250);
+    salaTradicional r1 = new salaTradicional("COD120", "La noche del demonio", 10.000, 120);
+    salaTradicional r2 = new salaTradicional("COD402", "El conjuro", 15.000, 250);
 
-    Sala3D r3 = new Sala3D("COD502", "Eso IT", 30.0, 5.0);
-    Sala3D r4 = new Sala3D("COD107", "El perfume", 35.0, 5.0);
+    Sala3D r3 = new Sala3D("COD502", "Eso IT", 30.000, 5.000);
+    Sala3D r4 = new Sala3D("COD107", "El perfume", 35.000, 5.000);
     
     gestor.agregarReserva(r1);
     gestor.agregarReserva(r2);
@@ -23,7 +23,7 @@ public class Main {
         System.out.println(reservas[i].obtenerDetalles());
     }
 
-    double total = 0.0;
+    double total = 0;
 
     for(Reserva r : gestor.getReservas()){
         if (r != null) {
