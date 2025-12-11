@@ -16,9 +16,9 @@ public class Main {
     gestor.agregarReserva(r2);
     gestor.agregarReserva(r3);
     gestor.agregarReserva(r4);
-
+            // junto mejor practica 
     Reserva [] reservas = gestor.getReservas();
-
+            //Innecesario 
     for(int i = 0; i < gestor.getContador(); i++){
         System.out.println(reservas[i].obtenerDetalles());
     }
